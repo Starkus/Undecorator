@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+    Copyright 2014-2016 Arnaud Nouard. All rights reserved.
+
+    All rights reserved.
+
+    Redistribution and use in source and binary forms, with or without
+    modification, are permitted provided that the following conditions are met:
+
+    * Redistributions of source code must retain the above copyright notice, this
+      list of conditions and the following disclaimer.
+
+    * Redistributions in binary form must reproduce the above copyright notice,
+      this list of conditions and the following disclaimer in the documentation
+      and/or other materials provided with the distribution.
+
+    THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+    AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+    IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+    DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+    FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+    DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+    SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+    CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+    OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+    OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+-->
+
+<?import javafx.scene.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import insidefx.undecorator.ButtonAnimated?>
+
+<AnchorPane id="decorationRoot" fx:id="decorationRoot" maxHeight="-1.0" maxWidth="-1.0" minHeight="-1.0" minWidth="-1.0" pickOnBounds="false" prefHeight="400.0" prefWidth="600.0" snapToPixel="true" styleClass="decoration-resize" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1">
+  <children>
+    <ButtonAnimated fx:id="close" mnemonicParsing="false" pickOnBounds="true" prefHeight="21.0" prefWidth="45.0" styleClass="decoration-button-close" text="" AnchorPane.rightAnchor="-3.0" AnchorPane.topAnchor="-7.0">
+      <rotationAxis>
+        <Point3D />
+      </rotationAxis>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+    </ButtonAnimated>
+    <ButtonAnimated fx:id="maximize" mnemonicParsing="false" pickOnBounds="true" prefHeight="21.0" prefWidth="45.0" styleClass="decoration-button-maximize" text="" AnchorPane.rightAnchor="45.0" AnchorPane.topAnchor="-7.0">
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor></ButtonAnimated>
+    <ButtonAnimated fx:id="minimize" mnemonicParsing="false" pickOnBounds="true" prefHeight="21.0" prefWidth="45.0" styleClass="decoration-button-minimize" text="" AnchorPane.rightAnchor="93.0" AnchorPane.topAnchor="-7.0">
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor></ButtonAnimated>
+    <Button id="StageMenu" fx:id="menu" layoutX="0.0" mnemonicParsing="false" pickOnBounds="true" prefHeight="24.0" prefWidth="24.0" styleClass="decoration-button-menu" text="" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+         <contextMenu>
+            <ContextMenu fx:id="contextMenu" />
+         </contextMenu></Button>
+    <Label id="TitleLabel" fx:id="title" layoutY="7.0" mouseTransparent="true" prefWidth="384.0" style="-fx-alignment: center;" text="Title bar" AnchorPane.leftAnchor="150.0" AnchorPane.rightAnchor="150.0">
+      <effect>
+        <Glow />
+      </effect>
+    </Label>
+  </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+</AnchorPane>
